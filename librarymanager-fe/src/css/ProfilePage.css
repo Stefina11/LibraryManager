@@ -1,0 +1,79 @@
+/* ProfilePage.css */
+
+.profile-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  margin-top: 5rem;
+}
+
+.profile-container h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.profile-container h3 {
+  color: #34495e;
+  margin-top: 2rem;
+}
+
+.profile-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile-container li {
+  background-color: #ecf0f1;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  line-height: 1.5;
+}
+
+.profile-container button {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  background-color: #1a202c;
+  color: whitesmoke;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-container button:hover {
+  background-color: #34d399;
+  color: #1a202c;
+}
+
+.profile-container p {
+  color: #7f8c8d;
+}
+
+.due-date {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.loan-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.loan-cover {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.loan-info {
+  flex: 1;
+}

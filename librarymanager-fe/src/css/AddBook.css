@@ -1,0 +1,77 @@
+.add-book-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.add-book-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.add-book-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Ogni campo */
+.add-book-container form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-book-container label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.add-book-container input {
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+.add-book-container input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Messaggi */
+.add-book-container .success-message {
+  color: green;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-book-container .error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Bottone */
+.add-book-container button {
+  padding: px;
+  font-size: 16px;
+  background-color: #1a202c;
+  color: whitesmoke;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+   width: fit-content;
+   align-self: center;
+}
+
+.add-book-container button:hover {
+   background-color: #34d399;
+  color: #1a202c;
+}

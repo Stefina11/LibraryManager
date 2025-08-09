@@ -1,0 +1,54 @@
+/* Home.css */
+
+.home-container {
+    width: 100%; 
+    max-width:100%;            
+    min-height: 100vh;        
+    padding: 80px 24px 24px;  
+    box-sizing: border-box;   
+    margin: 0;                 
+  }
+  
+  h2 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 1.5rem; 
+    font-weight: 700;
+    margin-bottom: 3.5rem; 
+    color: #1a202c; 
+  }
+
+  .home-image {
+  width: 400px;      /* oppure la larghezza che preferisci */
+  height: auto;      /* mantiene le proporzioni */
+  display: block;
+  margin: 0 auto 2rem; /* centra l'immagine e aggiunge margine sotto */
+}
+  
+  .grid-books {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+     align-items: center; 
+    margin: 0 auto; 
+  }
+  
+  /* Messaggi di stato */
+  .error-message {
+    color: #e53e3e; /* rosso */
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .loading-message {
+    color: #718096; /* grigio */
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .no-results-message {
+    color: #a0aec0; /* grigio chiaro */
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  

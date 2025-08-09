@@ -1,0 +1,54 @@
+.book-detail-container {
+  margin-top: 80px;       
+  padding: 2rem 3rem;     
+  width: 100%;            
+  box-sizing: border-box; 
+  min-height: calc(100vh - 80px);
+}
+
+.book-detail-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+  text-align: center;
+}
+
+.book-detail-cover {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.book-detail-img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.09);
+}
+
+.book-detail-meta {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.book-detail-desc-title {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: #2563eb;
+}
+
+.book-detail-desc {
+  color: #444;
+}
+
+.book-detail-error {
+  padding: 1rem;
+  color: #d32f2f;
+  text-align: center;
+}
+
+.book-detail-loading {
+  padding: 1rem;
+  color: #888;
+  text-align: center;
+}
