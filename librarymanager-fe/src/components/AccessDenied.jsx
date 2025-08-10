@@ -1,4 +1,4 @@
-// components/AccessDenied.jsx
+
 export default function AccessDenied() {
     return (
         <div className="error-page">

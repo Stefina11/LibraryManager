@@ -1,4 +1,3 @@
-/* Home.css */
 
 .home-container {
     width: 100%; 
@@ -19,10 +18,10 @@
   }
 
   .home-image {
-  width: 400px;      /* oppure la larghezza che preferisci */
-  height: auto;      /* mantiene le proporzioni */
+  width: 400px;      
+  height: auto;      
   display: block;
-  margin: 0 auto 2rem; /* centra l'immagine e aggiunge margine sotto */
+  margin: 0 auto 2rem; 
 }
   
   .grid-books {
@@ -33,21 +32,21 @@
     margin: 0 auto; 
   }
   
-  /* Messaggi di stato */
+
   .error-message {
-    color: #e53e3e; /* rosso */
+    color: #e53e3e; 
     margin-top: 1rem;
     text-align: center;
   }
   
   .loading-message {
-    color: #718096; /* grigio */
+    color: #718096; 
     margin-top: 1rem;
     text-align: center;
   }
   
   .no-results-message {
-    color: #a0aec0; /* grigio chiaro */
+    color: #a0aec0; 
     margin-top: 1.5rem;
     text-align: center;
   }

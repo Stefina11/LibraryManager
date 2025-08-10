@@ -11,7 +11,6 @@ const BookDetail = () => {
   useEffect(() => {
     const fetchBookAndDescription = async () => {
       try {
-        // Recupera il libro dal backend
         const bookRes = await fetch(`http://localhost:8081/books/${id}`);
         if (!bookRes.ok) {
           throw new Error('Libro non trovato nel database');
@@ -19,7 +18,7 @@ const BookDetail = () => {
         const bookData = await bookRes.json();
         setBook(bookData);
 
-        // Usa l’ISBN per chiamare OpenLibrary
+  
         if (bookData.isbn) {
           const openLibRes = await fetch(`https://openlibrary.org/isbn/${bookData.isbn}.json`);
           if (!openLibRes.ok) {
@@ -56,7 +55,6 @@ const BookDetail = () => {
     return <div className="book-detail-loading">Caricamento...</div>;
   }
 
-  // Costruisci la URL della copertina
   const coverSrc =
     book.coverImage || 
     (book.isbn

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import '../css/NavBar.css';
-import { FaSignOutAlt } from 'react-icons/fa'; // icona logout
+import { FaSignOutAlt } from 'react-icons/fa'; 
 
 function NavBar() {
   const { isAuthenticated, userRole, logout } = useAuth();

@@ -14,7 +14,7 @@ export const AuthProvider = ({ children }) => {
   // LOGIN
   const login = (newToken) => {
     localStorage.setItem('jwtToken', newToken);
-    setToken(newToken); // aggiorna lo stato, attiva il useEffect
+    setToken(newToken); 
   };
 
   // LOGOUT
@@ -27,7 +27,7 @@ export const AuthProvider = ({ children }) => {
     setUserRole(null);
   };
 
-  // Quando cambia il token, decodifica e imposta i dati utente
+
   useEffect(() => {
     if (!token) {
       setIsAuthenticated(false);
@@ -51,27 +51,7 @@ export const AuthProvider = ({ children }) => {
     const email = decoded.sub;
     const roles = decoded.roles || [];
 
-  //   api.get(`/users/by-email/${encodeURIComponent(email)}`, {
-  //      headers: { Authorization: `Bearer ${token}` },
-  //   })
-  //   .then((res) => {
-  //     setIsAuthenticated(true);
-  //     setUserEmail(email);
-  //     setUserId(res.data.id);
-  //     const roles = decoded.roles || [];
-  //     setUserRole(roles.includes('ROLE_ADMIN') ? 'ADMIN' : 'USER');
-  //   })
-  //   .catch((err) => {
-  //     console.error('Errore recupero id utente:', err);
-  //     localStorage.removeItem('jwtToken');
-  //     setToken(null);
-  //     setIsAuthenticated(false);
-  //     setUserId(null);
-  //     setUserEmail(null);
-  //     setUserRole(null);
-  //   });
-
-  // }, [token]); // si attiva ogni volta che cambia il token
+ 
 console.log('🟢 Sto per chiamare users/by-email con token:', token);
  api.get('/users/by-email', {
     params: { email },               

@@ -10,7 +10,6 @@ function ProfilePage({ token }) {
 
   const email = getEmailFromToken(token);
 
-  // hook
   const {
     userLoans: loans,
     loadingLoans: loading,
@@ -18,7 +17,6 @@ function ProfilePage({ token }) {
     returnLoan,
   } = useUserLoans({ token });
 
-  // Recupera info utente (solo una volta se c’è l’email)
   useEffect(() => {
     if (!email) {
       setError("Token non valido o email non trovata");
@@ -41,7 +39,7 @@ function ProfilePage({ token }) {
     fetchUserData();
   }, [email, token]);
 
-  // Gestione click su "Restituisci"
+  
   async function handleReturn(loanId) {
     try {
       await returnLoan(loanId);
@@ -50,7 +48,7 @@ function ProfilePage({ token }) {
     }
   }
 
-  // Estrae l’email dal token
+  
   function getEmailFromToken(token) {
     if (!token) return null;
     try {

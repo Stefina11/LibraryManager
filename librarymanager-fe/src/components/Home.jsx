@@ -15,7 +15,6 @@ const Home = () => {
   const [error, setError] = useState(null);
   const [hasSearched, setHasSearched] = useState(false);
 
-  // Hook personalizzato per gestire prestiti
   const {
     userLoans,
     loadingLoans,
@@ -32,10 +31,8 @@ const handleSearch = async (q) => {
   try {
     let response;
     if (!q.trim()) {
-      // Se query vuota, prendo tutti i libri
       response = await api.get('/books');
     } else {
-      // Altrimenti faccio la ricerca filtrata
       response = await api.get('/books/search', { params: { query: q } });
     }
     setBooks(response.data);

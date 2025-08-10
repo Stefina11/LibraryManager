@@ -6,7 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.4.0</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/> 
 	</parent>
 	<groupId>com.libraryManager</groupId>
 	<artifactId>demo</artifactId>
@@ -28,8 +28,8 @@
 	</scm>
 	<properties>
 		 <java.version>17</java.version> 
-		    <maven.compiler.source>17</maven.compiler.source> <!--aggiunto 21/04 -->
-            <maven.compiler.target>17</maven.compiler.target> <!--aggiunto 21/04 -->
+		    <maven.compiler.source>17</maven.compiler.source> 
+            <maven.compiler.target>17</maven.compiler.target> 
 	</properties>
 	<dependencies>
 		<dependency>
@@ -77,13 +77,6 @@
     <artifactId>jjwt-jackson</artifactId>
     <version>0.11.5</version>
   </dependency>
-<!-- 
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-devtools</artifactId>
-      <scope>runtime</scope>
-      <optional>true</optional>
-    </dependency>-->
     
     <dependency>
     <groupId>com.fasterxml.jackson.core</groupId>

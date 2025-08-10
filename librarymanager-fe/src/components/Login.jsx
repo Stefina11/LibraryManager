@@ -29,7 +29,7 @@ function Login() {
                 localStorage.setItem('jwtToken', response.data.token);
                 login(response.data.token); 
                 console.log('Token salvato:', response.data.token);
-                navigate('/'); // return home
+                navigate('/'); 
             }
 
         } catch (err) {

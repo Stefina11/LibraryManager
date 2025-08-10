@@ -36,7 +36,6 @@ function Register() {
                 setError('Errore durante la registrazione: ' + response.statusText);
             }
         } catch (err) {
-            // Gestisci gli errori di rete o gli errori dal backend
             setError('Errore durante la registrazione: ' + err.message);
             console.error('Errore durante la registrazione:', err);
         }

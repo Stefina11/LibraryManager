@@ -3,8 +3,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw; /* tutta la larghezza della viewport */
-  margin-left: calc(-1 * 2rem); /* compensa il padding di #root */
+  width: 100vw; 
+  margin-left: calc(-1 * 2rem); 
   margin-right: calc(-1 * 2rem);
   padding: 1rem 2rem;
   box-sizing: border-box;
@@ -32,16 +32,16 @@
 .navbar-logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem; /* spazio tra immagine e testo */
+  gap: 0.5rem;
 }
 .navbar-image {
-  width: 32px; /* o la dimensione che preferisci */
+  width: 32px; 
   height: 32px;
 }
 
 .navbar-links {
     display: flex;
-    gap: 2.5rem; /* spazio tra i link */
+    gap: 2.5rem; 
     align-items: center;
 }
 
@@ -57,11 +57,10 @@
   
 .navbar-links a:hover,
 .navbar-links button:hover {
-    color: #34d399; /* verde chiaro */
+    color: #34d399; 
 }
   
 
-/* Bottone logout a destra */
 .navbar-logout {
     cursor: pointer;
     display: flex;
