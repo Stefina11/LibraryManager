@@ -64,4 +64,15 @@ metodo "signup" nel file AthenticationService.java:
 
 .setRole(Role.ROLE_USER) deve essere MOMENTANEAMENTE sostituito con .setRole(Role.ROLE_ADMIN)
 
+### 2 Versione demo del Front-end
+Collegarsi a librarymanagerx.netlify.app
+
+Per l'inserimento dei libri utilizzare la seguente utenza admin:
+email: maria@prova.it
+password: ciaociao
+
+
+
+
+
 
