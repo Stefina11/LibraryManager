@@ -11,7 +11,7 @@ const BookDetail = () => {
   useEffect(() => {
     const fetchBookAndDescription = async () => {
       try {
-        const bookRes = await fetch(`http://localhost:8081/books/${id}`);
+        const bookRes = await fetch(`${import.meta.env.VITE_API_URL}/books/${id}`);
         if (!bookRes.ok) {
           throw new Error('Libro non trovato nel database');
         }
@@ -65,7 +65,7 @@ const BookDetail = () => {
     <div className="book-detail-container">
       <h1>{book.title}</h1>
 
-      {/* Qui metti la copertina */}
+      {}
       <div className="book-detail-cover">
         <img
           src={coverSrc}

@@ -25,7 +25,7 @@ function ProfilePage({ token }) {
 
     async function fetchUserData() {
       try {
-        const res = await fetch(`http://localhost:8081/users/by-email?email=${email}`, {
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/users/by-email?email=${email}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         if (!res.ok) throw new Error("Errore nel recupero dati utente");
