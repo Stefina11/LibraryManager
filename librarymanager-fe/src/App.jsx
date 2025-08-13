@@ -14,7 +14,7 @@ import { AuthProvider , useAuth} from './context/AuthContext';
 
 import { ToastContainer, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './css/toast.css';
+import './css/Toast.css';
 
 function ProfileWrapper() {
   const { token, logout } = useAuth();
