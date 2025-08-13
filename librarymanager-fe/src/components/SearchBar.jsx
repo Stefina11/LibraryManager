@@ -1,4 +1,4 @@
-import '../css/searchbar.css';
+import '../css/Searchbar.css';
 
 const SearchBar = ({ onSearch, query, setQuery }) => {
   
