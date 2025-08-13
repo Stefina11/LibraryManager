@@ -31,7 +31,7 @@ public class AuthenticationService {
     public User signup(RegisterUserDto input) {
 
         User user = new User()
-        		.setRole(Role.ROLE_ADMIN)
+        		.setRole(Role.ROLE_USER)
                 .setFirstName(input.getFirstName())
                 .setLastName(input.getLastName())
                 .setEmail(input.getEmail())
