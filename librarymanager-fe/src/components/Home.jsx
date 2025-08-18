@@ -5,7 +5,7 @@ import useUserLoans from '../hooks/useUserLoans';
 import SearchBar from './SearchBar';
 import BookCard from './BookCard';
 import '../css/Home.css';
-import '../App.css';
+// import '../App.css';
 
 const Home = () => {
   const { userId, token } = useAuth();
@@ -106,7 +106,7 @@ const handleSearch = async (q) => {
       )}
 
       {hasSearched && !loading && books.length === 0 && (
-        <p className="no-result-message">Nessun libro trovato.</p>
+        <p className="no-results-message">Nessun libro trovato.</p>
       )}
     </div>
   );
